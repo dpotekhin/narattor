@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>narrator_animation</title>
+        <meta name="generator" content="PixiAnimate Extension">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    </head>
+    <body>
+        <canvas id="stage" width="550" height="400"></canvas>
+        <script src="libs/pixi.min.js"></script>
+        <script src="libs/pixi-animate.min.js"></script>
+        <script src="narrator_animation.js"></script>
+        <script>
+            var scene = new PIXI.animate.Scene(550, 400, {
+                view: document.getElementById("stage"),
+                backgroundColor: 0xffffff,
+                antialias: true
+            });
+            scene.load(lib.narrator_animation);
+        </script>
+    </body>
+</html>
